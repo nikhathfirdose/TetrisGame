@@ -1,10 +1,12 @@
 import React from "react";
 import Cell from "./Cell";
-const Stage = ({ stage }) => {
+const Stage = (props) => {
+  console.log(props.stage);
   return (
     <div>
-      Stage
-      <Cell />
+      {props.stage.map((row) =>
+        row.map((cell, x) => <Cell index={x} key={x} type={cell[0]} />)
+      )}
     </div>
   );
 };

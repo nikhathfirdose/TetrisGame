@@ -2,7 +2,11 @@ import React from "react";
 import Tetris from "./components/Tetris";
 
 const App = () => {
-  return <div>hi </div>;
+  return (
+    <div>
+      <Tetris />
+    </div>
+  );
 };
 
 export default App;

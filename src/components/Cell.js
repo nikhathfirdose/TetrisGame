@@ -1,6 +1,10 @@
 import React from "react";
 
-const Cell = ({ type }) => {
-  return <div>cell</div>;
+const Cell = (props) => {
+  return (
+    <div>
+      cell - {props.type}-{props.index}
+    </div>
+  );
 };
 export default Cell;

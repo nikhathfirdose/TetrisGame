@@ -1,6 +1,6 @@
 import React from "react";
 
-const Display = ({ gameOver, text }) => {
-  return <div>Display {text}</div>;
+const Display = (props) => {
+  return <div>Display {props.text}</div>;
 };
 export default Display;
