@@ -3,7 +3,10 @@ import Stage from "./Stage";
 import Display from "./Display";
 import StartButton from "./StartButton";
 import { createStage } from "../gameHelpers";
-const Tetris = ({ type }) => {
+
+import { randomTetrominos } from "../tetrominos";
+const Tetris = (props) => {
+  console.log(randomTetrominos());
   return (
     <div>
       <Stage stage={createStage()} />
